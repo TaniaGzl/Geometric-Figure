@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Geometric Figures</title>
+</head>
+
+<body>
+    <h1>Geometric Figures</h1>
+    <div class="container">
+        <!-- Square  -->
+        <div>
+            <img src="img/cuadrado.PNG" alt="Square Icon" class="figure-icon">
+            <section>
+                <h2>Calculate the area and perimeter of a square</h2>
+                <form>
+                    <div>
+                        <label for="squareInput">How long is each side?</label>
+                        <input id="squareInput" type="number" class="square">
+                    </div>
+                    <p id="squarePerimeter"></p>
+                    <p id="squareArea"></p>
+                    <div>
+                        <button type="button" onclick="squarePerimeterCalculate()">Calculate perimeter</button>
+                        <button type="button" onclick="squareAreaCalculate()">Calculate Area</button>
+                        <button type="button" onclick="reset()">Reset</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <!-- Circle -->
+        <div>
+            <img src="img/circle.PNG" alt="Circle Icon" class="figure-icon">
+            <section>
+                <h2>Calculate the area and perimeter of a Circle</h2>
+                <form>
+                    <div class="datos">
+                        <label for="circleInput">How long is the radius?</label>
+                        <input id="circleInput" type="number" class="square">
+                    </div>
+                    <p id="circlePerimeter"></p>
+                    <p id="circleArea"></p>
+                    <div>
+                        <button type="button" onclick="circlePerimeterCalculate()">Calculate perimeter</button>
+                        <button type="button" onclick="circleAreaCalculate()">Calculate Area</button>
+                        <button type="button" onclick="reset()">Reset</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <!-- Triangle -->
+        <div>
+            <img src="img/triangle.PNG" alt="Triangle Icon" class="figure-icon">
+            <section>
+                <h2>Calculate the area and perimeter of a triangle</h2>
+                <form>
+                    <div class="triangle">
+                        <div>
+                            <label for="triangleInput1">How long is the first side?</label>
+                            <input id="triangleInput1" type="number">
+                        </div>
+                        <div>
+                            <label for="triangleInput2">How long is the second side?</label>
+                            <input id="triangleInput2" type="number">
+                        </div>
+                        <div>
+                            <label for="triangleInput3">How long is the base?</label>
+                            <input id="triangleInput3" type="number">
+                        </div>
+                        <div>
+                            <label for="triangleInput4">How long is the height?</label>
+                            <input id="triangleInput4" type="number">
+                        </div>
+                    </div>
+                    <p id="trianglePerimeter"></p>
+                    <p id="triangleArea"></p>
+                    <div>
+                        <button type="button" onclick="trianglePerimeterCalculate()">Calculate perimeter</button>
+                        <button type="button" onclick="triangleAreaCalculate()">Calculate Area</button>
+                        <button type="button" onclick="reset()">Reset</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <h3>Made by Tania G</h3>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
